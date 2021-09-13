@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+   <head>
+
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title> Вход в личный кабинет </title>
+       <link rel="stylesheet" href="static/css/style.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       <script type="text/javascript" src="static/js/script.js"></script>
+   </head>
+
+
+   <body>
+      <form>
+        <img src="static/image/ico.png"/>
+		 
+        <div data-tip="Формат ввода [a-z-A-z-0-9]*@[a-z-A-Z]*.[a-z-A-z]*">
+            <input type="text" placeholder="Введите ваш e-mail"  id="email">
+        </div>
+
+
+        <div data-tip="не менее 8 символов">
+            <input type="password" placeholder="Введите пароль" id="password1" >
+        </div>
+
+
+        <span id="valid"></span>
+        <span id="valid1"></span>
+
+        <button > Войти </button>
+
+        <a href = "reg"> Регистрация</a>
+        <a href = "pas">Забыли свой пароль?</a>
+         
+      </form>
+   </body>
+
+</html>

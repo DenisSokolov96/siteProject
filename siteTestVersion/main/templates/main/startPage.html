@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    {% if tasks %}
+        {% for el in tasks %}
+            <div class="alert alert-warning mt-2">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.task }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h3>Данных нет...</h3>
+    {% endif %}
+
+    <a href = "create">Добавить запись</a>
+    <a href = "login">Авторизация</a>
+    <a href = "reg">Регистрация</a>
+
+</body>
+</html>

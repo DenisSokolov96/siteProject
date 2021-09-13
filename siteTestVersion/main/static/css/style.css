@@ -1,0 +1,170 @@
+html {
+height: 100%
+}
+
+body {
+background-attachment: fixed
+}
+body
+{
+    background: linear-gradient(45deg, #a1ffce, #f9ffd1);
+    font-size: 20px;
+}
+
+img
+{
+  width: 250px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.helptext
+{
+   display:none
+}
+form
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    margin-bottom: inherit;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-200px 0 0 -200px;
+}
+input
+{
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  font-size: 17px;
+}
+label
+{
+    display:none
+
+}
+button
+{
+  color: red;
+  background-color: #ff9664;
+  background-image: linear-gradient(top, #6496c8, #346392);
+  box-shadow: inset 0 0 0 1px #27496d;
+  border: none;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+button:hover, button.hover {
+  box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+button:active,button.active {
+  box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+h1
+{
+  text-align: center;
+}
+.block1, .block2, .block3, .block4,.block5, .block6
+{
+
+  background:#98bf21;
+  height:100px;
+  width:100px;
+  position:absolute;
+  left: 1%;
+}
+.block2
+{
+  background:red;
+}
+.block3
+{
+  background:yellow;
+}
+.block4
+{
+  background:blue;
+}
+
+.block5
+{
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,119,9,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.block6
+{
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,91,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+/* задаем относительное позиционирование контейнеру */
+.block{position:relative;}
+/* Оформление скрытого элемента по умолчанию */
+.hidden
+{
+  display: none;
+  position: absolute;
+  bottom: 130%;
+  left: 0px;
+  background-color: #fff;
+  color: #3aaeda;
+  padding: 5px;
+  text-align: center;
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+  box-shadow: 0 1px 1px rgba(0,0,0,.16);
+  font-size: 14px;
+}
+/* Дополнительное оформление скрытого элемента(необязательно) */
+.focus + .hidden:before
+{
+  content: " ";
+  position: absolute;
+  top: 98%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #fff;
+  border-color: #fff transparent transparent transparent;
+  z-index: 2;
+}
+/* Дополнительное оформление скрытого элемента(необязательно) */
+.focus + .hidden:after
+{
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #fff;
+  border-color: rgba(0,0,0,.16) transparent transparent transparent;
+  z-index: 1;
+}
+/* Появление скрытого элемента при клике */
+.focus:focus + .hidden{display: block;}
+
+
+
+.list2a {
+    margin-bottom: 8px;
+    padding:0;
+    list-style: none;
+    counter-reset: li;
+}
+

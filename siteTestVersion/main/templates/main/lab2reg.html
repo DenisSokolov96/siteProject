@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+   <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title> Регистрация </title>   
+      <link rel="stylesheet" href="static/css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="static/js/script.js"></script>
+   </head>
+
+
+   <body>
+      <form>
+         <img src="static/image/ico.png" > </img>
+		 
+
+         <div data-tip="Формат ввода ***@***.[a-z-A-z]">
+   		    <input type="text" placeholder="Введите ваш e-mail"  id="email">
+		 </div>
+		    
+          
+          
+  		<div data-tip="не менее 8 символов">
+            <input type="password" placeholder="Введите новый пароль" id="password1" >
+        </div>
+
+		<div data-tip="не менее 8 символов">
+    	    <input type="password" placeholder="Подтвердите пароль" id="password2" >
+		</div>
+		
+        <span id="valid"></span>
+        <span id="valid1"></span>
+
+        <button > Зарегистрироваться </button>
+
+      </form>
+   </body>
+
+</html>
